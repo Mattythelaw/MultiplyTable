@@ -1,5 +1,6 @@
 package com.example.multiplytable
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -14,7 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val multiplyBtn = findViewById<Button>(R.id.multiplyBtn)
-        
+        multiplyBtn.setOnClickListener {
+            //create the explicit content//
+            val intent = Intent(this, TableDisplay::class.java)
+        }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
