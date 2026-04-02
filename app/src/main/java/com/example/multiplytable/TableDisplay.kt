@@ -29,13 +29,14 @@ class TableDisplay : AppCompatActivity() {
         //creating counter for while loop//
         var count = 1
 
-        //heading if user types input//
+        //displaying the number the user entered on the second page next to the text x tables//
         multiplyTable.text = timesDisplay
 
         while (count <= 10){
             //
             val answer = tableNumber + count
             timesDisplay += "$tableNumber x $count = ${answer}\n"
+            //increasing the count//
         }
 
 
