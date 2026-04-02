@@ -15,11 +15,21 @@ class TableDisplay : AppCompatActivity() {
 
         //assigning data from main page to variables//
         val bundle:Bundle? = intent.extras
+
         //getting the number entered by the user as a string//
         val tableString: String? = bundle?.getString("tableNumber")
+
         //converting the string back into a number ready for multiplication//
-        val tableNumber = tableString?.toInt()
+        val tableNumber = tableString!!.toInt()
+
+        //display the heading so we can see the value in action //
         val multiplyTable = findViewById<TextView>(R.id.tableDisplayTxt)
+
+        val timesDisplay : String = "$tableNumber x table\n\n"
+
+        //heading if user types input//
+        multiplyTable.text = timesDisplay
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
