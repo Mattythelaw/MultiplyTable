@@ -38,7 +38,7 @@ class TableDisplay : AppCompatActivity() {
                  count++
                 continue
             }
-            val answer = tableNumber + count
+            val answer = tableNumber * count
             timesDisplay += "$tableNumber x $count = ${answer}\n"
             //increasing the count//
             count++
