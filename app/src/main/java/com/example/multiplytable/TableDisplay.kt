@@ -34,7 +34,7 @@ class TableDisplay : AppCompatActivity() {
         multiplyTable.text = timesDisplay
 
         while (count <= 20){
-            
+
             val answer = tableNumber * count
             timesDisplay += "$tableNumber x $count = ${answer}\n"
             //increasing the count//
