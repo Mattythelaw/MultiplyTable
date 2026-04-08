@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TableDisplay::class.java)
             //added the table number to the intent //
             intent.putExtra("tableNumber", numInput.text.toString())
+        startActivity(intent)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

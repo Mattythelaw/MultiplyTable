@@ -24,6 +24,7 @@ class TableDisplay : AppCompatActivity() {
 
         //display the heading so we can see the value in action //
         val multiplyTable = findViewById<TextView>(R.id.tableDisplayTxt)
+        
 
         var timesDisplay : String = "$tableNumber x table\n\n"
         //creating counter for while loop//
