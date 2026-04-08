@@ -33,11 +33,8 @@ class TableDisplay : AppCompatActivity() {
         //displaying the number the user entered on the second page next to the text x tables//
         multiplyTable.text = timesDisplay
 
-        while (count <= 10){
-            if (count == 4){
-                 count++
-                continue
-            }
+        while (count <= 20){
+            
             val answer = tableNumber * count
             timesDisplay += "$tableNumber x $count = ${answer}\n"
             //increasing the count//
