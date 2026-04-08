@@ -24,10 +24,10 @@ class TableDisplay : AppCompatActivity() {
 
         //display the heading so we can see the value in action //
         val multiplyTable = findViewById<TextView>(R.id.tableDisplayTxt)
-        
 
+        // This is to start with the heading and to add two new lines//
         var timesDisplay : String = "$tableNumber x table\n\n"
-        //creating counter for while loop//
+        //declaring the control variable//
         var count = 1
 
         //displaying the number the user entered on the second page next to the text x tables//
